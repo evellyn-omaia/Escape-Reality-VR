@@ -1,32 +1,23 @@
-﻿# Escape Reality VR
+# Escape Reality VR
 
-Jogo tridimensional de investigação, suspense e escape room,
-com suporte a realidade virtual e multiplayer cooperativo.
+Jogo web de investigação e escape room. ISSUE 01: protótipo navegável do escritório.
 
-## Tecnologias
+## Executar
 
-- HTML5
-- CSS3
-- JavaScript ES Modules
-- Three.js
-- WebXR
-- Firebase Authentication
-- Cloud Firestore
-- Firebase Realtime Database
-
-## Execucao local
-
+```powershell
 python -m http.server 8085 --bind 127.0.0.1
+```
 
-Acesse: http://localhost:8085
+Abra http://localhost:8085. É necessária conexão com a internet para carregar Three.js 0.170.0 via CDN.
 
-## Status
+## Controles
 
-Em desenvolvimento.
+WASD: andar; mouse: olhar; Shift: correr; Ctrl: agachar; Esc: pausar.
 
-## Arquitetura
+## Estado
 
-Estrutura modular, nomenclatura em portugues e
-separacao de responsabilidades.
+Motor Three.js, cenário procedural, colisões horizontais, menus e configurações. Reiniciar restaura a posição sem reconstruir a cena. A janela é cenográfica. Não há interações com objetos, enigmas, áudio, Firebase ou VR funcional ainda. Ranking e multiplayer serão implementados posteriormente.
 
-O projeto nao exige instalacoes adicionais.
+## Validação
+
+Verificar no navegador a inicialização, controles, colisões, iluminação, pausa, reinício, redimensionamento e configurações. O desempenho varia conforme o hardware.
