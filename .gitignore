@@ -1,0 +1,25 @@
+﻿# Dependencias
+node_modules/
+
+# Configuracoes privadas
+.env
+.env.*
+!.env.example
+
+# Credenciais Firebase
+*firebase-adminsdk*.json
+*serviceAccount*.json
+*service-account*.json
+
+# Editores
+.vscode/
+.idea/
+
+# Arquivos temporarios
+*.log
+*.tmp
+__pycache__/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
